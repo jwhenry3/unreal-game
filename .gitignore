@@ -1,0 +1,51 @@
+# IDE / tooling
+.playwright-mcp
+.vs
+.vscode
+*.sln
+*.suo
+*.user
+*.userprefs
+.vsconfig
+
+# Accidental artifacts
+nul
+/*.png
+
+# Unreal Engine generated
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+Content/Collections/
+Content/Developers/
+
+# Keep only plugin source; ignore generated plugin build artifacts
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Backend (Node/NestJS)
+backend/node_modules/
+backend/dist/
+backend/data/*.sqlite
+backend/data/*.sqlite-journal
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Web UI (Vite)
+ui/node_modules/
+ui/dist/
+
+# Local observability app
+observability/node_modules/
+observability/dist/
+observability/web-dist/
+observability/data/
+observability/.env
+
+# General
+.env
+.env.local
+*.log
